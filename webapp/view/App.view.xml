@@ -1,8 +1,13 @@
-<mvc:View controllerName="farmanet.invoices.controller.App"  xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-    <Button id="_IDGenButton1" text="{i18n>showHelloButton}" press=".onShowHello"></Button>
-    <Input id="_IDGenInput1" 
-        value="{/recipient/name}" 
-        description="Hello {/recipient/name}" 
-        width="60%"
-        valueLiveUpdate="true"></Input>
+<mvc:View controllerName="farmanet.invoices.controller.App"  xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+<Shell>
+    <App>
+        <pages>
+            <Page title="{i18n>appTitle}">
+                <content>
+                    <mvc:XMLView viewName="farmanet.invoices.view.HelloPanel" ></mvc:XMLView>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</Shell>
 </mvc:View>
